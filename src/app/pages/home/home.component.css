@@ -1,9 +1,55 @@
+/*
+<app-menu-title></app-menu-title>
+<div class="container__articles">
+  <div class="articles__main">
+    <app-big-card
+  <div class="articles__others">
+    <app-small-card
+</div>
+*/
+
+/* .container {
+  display: grid;
+  grid-template-columns: 150px 250px auto 250px 150px;
+  grid-template-rows: 25% 100px auto; 
+  } */
+
 .container__articles{
   margin-top: 30px;
-
+  /* display: grid;
+  grid-template-columns: 50% 90%;
+  grid-auto-rows: auto; */
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
+.articles__main{
+  width: 45%;
+  margin-right: 20px;
+}
 
+.articles__others{
+  width: 45%;
+  margin-left: 20px;
+}
+
+@media screen and (max-width:600px) {
+  .container__articles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 0.8em;
+  }
+  
+  .articles__main{
+    width: 95%;
+    margin-bottom: 20px;
+    margin-left: 10px;
+  }
+  
+  .articles__others{
+    width: 95%;
+  }
+ 
+}
