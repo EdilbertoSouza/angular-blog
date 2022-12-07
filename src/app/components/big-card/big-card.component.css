@@ -1,32 +1,21 @@
-/* <div class="container__big-card">
-  <div class="container__big-card-content">
-    <div class="big-card__photo">
-    <div class="big-card__title">
-    <div class="big-card__description">
-  <div class="container__big-card__separator">
-</div> */
-
 .container__big-card{
   width: 100%;
   margin-left: 10px;
-  margin-right: 10px;
-  display: flex;
-  flex-direction: column;
-  /* align-items: center; */
-  /* justify-content: center; */
+  margin-right: 10px;  
 }
 
 .container__big-card-content{
   width: 100%;
+  max-width:360px;
   display: flex;
   flex-direction: column;
 }
 
-.big-card__photo > img{
+.big-card__photo > a > img{
   width: 100%;
   height: auto;
-  margin-right: 10px;
   min-width: 200px;
+  margin-right: 10px;
 }
 
 .big-card__title > h1  {
@@ -48,8 +37,17 @@
 }
 
 @media screen and (max-width:600px) {
+  .container__big-card{
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;  
+  }
+
   .container__big-card__separator{
     margin-top: 10px;
-    display: inline;
-  }   
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
 }

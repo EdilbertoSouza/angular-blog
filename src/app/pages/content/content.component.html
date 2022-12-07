@@ -1,3 +1,5 @@
+<app-menu-title></app-menu-title>
+
 <div class="container__content">
   <div class="content__cover">
     <img src="{{ photoCover }}" alt="" srcset="">
@@ -7,7 +9,7 @@
     <hr />
   </div>
   <div class="content__description">
-    <a [routerLink]="['']"> << VOLTAR </a>
+    <button type="button" [routerLink]="['']"> << VOLTAR</button>
     <p>
       {{ contentDescription }}
     </p>

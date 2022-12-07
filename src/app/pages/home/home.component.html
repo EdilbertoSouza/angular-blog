@@ -2,7 +2,6 @@
 
 <div class="container__articles">
   <div class="articles__main">
-
     <app-big-card
       Id={{mainList[0][0]}}
       photoCover={{mainList[0][1]}}
@@ -18,8 +17,8 @@
         photoCover={{item[1]}}
         cardTitle={{item[2]}}
       >
-      </app-small-card>      
+      </app-small-card>
     </div>
-
+    <button type="button" (click)="buttonOnClick()">Ver Mais Filmes</button>
   </div>
 </div>

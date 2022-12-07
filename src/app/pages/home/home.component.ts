@@ -11,22 +11,32 @@ import { dataFake } from '../../data/dataFake'
 export class HomeComponent implements OnInit {
   mainList:string[][] = []
   dataList:string[][] = []
+  limit:number = 2
+  offset:number = 1
+  min:number = 1
+  max:number = 2
 
-  constructor(
-    private route:ActivatedRoute
-  ) { }
+  constructor(private route:ActivatedRoute) { 
+  }
 
   ngOnInit(): void {
-    this.setValuesToComponent()
+    this.setValuesToComponent(1)
   }
 
-  setValuesToComponent(){
+  setValuesToComponent(offset:number){
     const result = dataFake[0]
     this.mainList.push([result.id, result.photoCover, result.title, result.description])
-    
-    for (let i = 1; i < dataFake.length; i++) {
+    this.max = (this.limit * this.offset)
+    this.min = (this.max - this.limit) + 1
+
+    for (let i = this.min; i <= this.max; i++) {
       const result = dataFake[i];
       this.dataList.push([result.id, result.photoCover, result.title, result.description])
-    }    
+    }
   }
+
+  public buttonOnClick() {
+    this.setValuesToComponent(this.offset++)
+  }  
+
 }

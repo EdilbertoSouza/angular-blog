@@ -1,6 +1,5 @@
 .container__content{
-  width: 100%;
-  height: 100vh;
+  height: 75vh;
   margin-top: 20px;
   display: flex;
   flex-direction: column;
@@ -23,6 +22,20 @@
 
 .content__description > p{
   margin: 15px 15px 15px 15px;
-  width: 80%;
+  width: 50%;
   color: rgb(198, 197, 197);
+}
+
+.content__description > a{
+  color:  yellow;
+}
+
+button {
+  padding: .25rem .5rem;
+  margin: .25rem 0;
+  font-size: 1.2rem;
+  color: black;
+  background-color: yellow;
+  border: none;
+  border-radius: 1rem;
 }
