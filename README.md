@@ -8,6 +8,9 @@ Olá! Seja bem vindo(a) ao meu projeto Angular Blog. Esse projeto foi desenvolvi
 Também foi acrescentado uma nova funcionalidade: 
 * paginação para visualizar mais filmes
 
+## Link do Projeto
+https://edilberto-souza-angular-blog.netlify.app/
+
 Segue imagens do projeto:
 
 ## home
